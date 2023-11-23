@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="App.css">
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+<body>
+  <div class="header">
+        <h1>Зоомагазин</h1>
+    </div>
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <card
+          v-for="(card, index) in cards"
+          :key="index"
+          :card="card"
+        ></card>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Как с нами связаться: 8 888 888 88 88</p>
+  </div>
+  <script src="App.js"></script>
+</body>
+</html>

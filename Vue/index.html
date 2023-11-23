@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Парикмахеры</title>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+  <style>
+
+body {
+  background-color: #2cb58c;
+}
+   .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #100f0f;
+}
+
+.header img {
+    margin-left: 20px;
+    height: 60px;
+}
+
+.header h1 {
+  font-size: 23px;
+  margin-left: 10px;
+  margin-top: 3px;
+  color: #2cb58c;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #10141c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #2cb58c;
+  padding: 10px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    width:330px;
+    height: 510px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(86, 82, 82);
+    border: solid;
+  }
+
+#app {
+  margin-top: 20px;
+}
+
+.btn-sm {
+  font-size: 100%;
+  padding: 0.3rem 0.9rem;
+}
+</style>  
+</head>
+<body>
+  <div class="header">
+        <h1>Сайт успешных парикмахеров</h1>
+    </div>
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <card
+          v-for="(card, index) in cards"
+          :key="index"
+          :card="card"
+        ></card>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Успешные парикмахеры @2023</p>
+  </div>
+  <script src="App.js"></script>
+</body>
+</html>

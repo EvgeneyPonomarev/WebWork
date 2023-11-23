@@ -1,0 +1,34 @@
+.animal-wrapper {
+    border: solid black 1px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    background: rgb(226, 226, 226);
+}
+
+.animal-wrapper button {
+    font-size: 1em;
+    border: solid black 1px;
+    padding: 10;
+    background: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.animal_pic {
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+}
+
+.white_div {
+    background: rgb(226, 226, 226);
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px black solid;
+    min-width: 160px;
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: antiquewhite;
+    min-height: 1080px;
+    min-width: 1920px;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+}

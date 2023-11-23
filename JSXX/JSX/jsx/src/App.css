@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(133, 228, 70);
+}
+
+.header {
+    width: 100%;
+    background-image: url("https://sun9-67.userapi.com/impf/C2nKeQbk7uKJSXUTzYEHAfZUerNZ75VQyGvpcA/FVc9a8FXyso.jpg?size=1590x530&quality=95&crop=220,0,1200,400&sign=0c708f74a62b0c82fe23af3a7f89c71f&type=cover_group.jpg");
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid greenyellow;
+}
+
+.movie-card {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+    border-radius: 9%;
+    box-sizing: border-box;
+    color: white;
+    height: 420px;
+    width: 400px;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+}
+
+.movie-card__image {
+    margin-top: 20px;
+}
+
+.subscribe {
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: greenyellow;
+    border: 2px solid white;
+}
+
+.subscribe:hover, .subscribe:focus, .subscribe:active {
+    cursor: pointer;
+}
